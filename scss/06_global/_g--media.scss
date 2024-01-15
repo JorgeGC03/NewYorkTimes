@@ -1,4 +1,28 @@
-$breakpoints:('movil': 576px, 'tablet': 768px, 'desktop': 992px);
+//Responsivo
+$breakpoints:(
+    'movil':576px,
+    'tablet':768px,
+    'desktop':992px
+);
+$colorsMedia:(
+    'blue':#2463EB,
+    'red':#DC2828,
+    'green':#47A766
+);
 
-$colorsMedia:('blue': #0000ff, 'red': #ff0505, 'green': #027302)
 
+@each $colors, $valueColors in $colorsMedia{
+    .g--color-#{$colors}{
+        color: $valueColors;
+    }
+}
+
+@each $breakpoint , $valueBreakpoint in $breakpoints{
+    @media (min-width: $valueBreakpoint){
+        @each $colors, $valueColors in $colorsMedia{
+            .g--color-#{$colors}\@#{$valueBreakpoint}{
+                color: $valueColors;
+            }
+        }
+    }
+}
