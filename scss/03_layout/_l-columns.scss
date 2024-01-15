@@ -25,18 +25,11 @@ $breakpoints:(
   'desktop':992px
 );
 
-$colums:(
-  '1': grid-template-columns:repeat(1,1fr),
-  '2': grid-template-columns:repeat(2,1fr),
-  '3': grid-template-columns:repeat(3,1fr),
-  '4': grid-template-columns:repeat(4,1fr)
-);
-
 @each $breakpoint , $valueBreakpoint in $breakpoints{
   @media (min-width: $valueBreakpoint){
-      @each $colum, $valorColum in $colums{
-          &--#{$colum}\@#{$valueBreakpoint}{
-              #{$valorColum}:$breakpoint;
+      @for $i from 1 through 4{
+          &--#{$i}\@#{$breakpoint}{
+              grid-template-columns:repeat(#{$i},1fr);
           }
       }
   }
