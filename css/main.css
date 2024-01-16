@@ -540,6 +540,170 @@ html {
   margin-left: auto;
 }
 
+.l-area-3 {
+  display: grid;
+  grid-template-areas: "a" "b" "c";
+}
+.l-area-3--bca-vertical {
+  grid-template-areas: "b" "c" "a";
+}
+.l-area-3--cba-vertical {
+  grid-template-areas: "c" "b" "a";
+}
+.l-area-3--cab-vertical {
+  grid-template-areas: "c" "a" "b";
+}
+.l-area-3--bac-vertical {
+  grid-template-areas: "b" "a" "c";
+}
+.l-area-3--acb-vertical {
+  grid-template-areas: "a" "c" "b";
+}
+.l-area-3--abc-horizontal {
+  grid-template-areas: "a b c";
+}
+.l-area-3--acb-horizontal {
+  grid-template-areas: "a c b";
+}
+.l-area-3--bac-horizontal {
+  grid-template-areas: "b a c";
+}
+.l-area-3--bca-horizontal {
+  grid-template-areas: "b c a";
+}
+.l-area-3--cab-horizontal {
+  grid-template-areas: "c a b";
+}
+.l-area-3--cba-horizontal {
+  grid-template-areas: "c b a";
+}
+.l-area-3__a {
+  grid-area: a;
+}
+.l-area-3__b {
+  grid-area: b;
+}
+.l-area-3__c {
+  grid-area: c;
+}
+
+@media (min-width: 576px) {
+  .movil\@l-area-3 {
+    display: grid;
+    grid-template-areas: "a" "b" "c";
+  }
+  .movil\@l-area-3--bca-vertical {
+    grid-template-areas: "b" "c" "a";
+  }
+  .movil\@l-area-3--cba-vertical {
+    grid-template-areas: "c" "b" "a";
+  }
+  .movil\@l-area-3--cab-vertical {
+    grid-template-areas: "c" "a" "b";
+  }
+  .movil\@l-area-3--bac-vertical {
+    grid-template-areas: "b" "a" "c";
+  }
+  .movil\@l-area-3--acb-vertical {
+    grid-template-areas: "a" "c" "b";
+  }
+  .movil\@l-area-3--abc-horizontal {
+    grid-template-areas: "a b c";
+  }
+  .movil\@l-area-3--acb-horizontal {
+    grid-template-areas: "a c b";
+  }
+  .movil\@l-area-3--bac-horizontal {
+    grid-template-areas: "b a c";
+  }
+  .movil\@l-area-3--bca-horizontal {
+    grid-template-areas: "b c a";
+  }
+  .movil\@l-area-3--cab-horizontal {
+    grid-template-areas: "c a b";
+  }
+  .movil\@l-area-3--cba-horizontal {
+    grid-template-areas: "c b a";
+  }
+}
+@media (min-width: 768px) {
+  .tablet\@l-area-3 {
+    display: grid;
+    grid-template-areas: "a" "b" "c";
+  }
+  .tablet\@l-area-3--bca-vertical {
+    grid-template-areas: "b" "c" "a";
+  }
+  .tablet\@l-area-3--cba-vertical {
+    grid-template-areas: "c" "b" "a";
+  }
+  .tablet\@l-area-3--cab-vertical {
+    grid-template-areas: "c" "a" "b";
+  }
+  .tablet\@l-area-3--bac-vertical {
+    grid-template-areas: "b" "a" "c";
+  }
+  .tablet\@l-area-3--acb-vertical {
+    grid-template-areas: "a" "c" "b";
+  }
+  .tablet\@l-area-3--abc-horizontal {
+    grid-template-areas: "a b c";
+  }
+  .tablet\@l-area-3--acb-horizontal {
+    grid-template-areas: "a c b";
+  }
+  .tablet\@l-area-3--bac-horizontal {
+    grid-template-areas: "b a c";
+  }
+  .tablet\@l-area-3--bca-horizontal {
+    grid-template-areas: "b c a";
+  }
+  .tablet\@l-area-3--cab-horizontal {
+    grid-template-areas: "c a b";
+  }
+  .tablet\@l-area-3--cba-horizontal {
+    grid-template-areas: "c b a";
+  }
+}
+@media (min-width: 992px) {
+  .desktop\@l-area-3 {
+    display: grid;
+    grid-template-areas: "a" "b" "c";
+  }
+  .desktop\@l-area-3--bca-vertical {
+    grid-template-areas: "b" "c" "a";
+  }
+  .desktop\@l-area-3--cba-vertical {
+    grid-template-areas: "c" "b" "a";
+  }
+  .desktop\@l-area-3--cab-vertical {
+    grid-template-areas: "c" "a" "b";
+  }
+  .desktop\@l-area-3--bac-vertical {
+    grid-template-areas: "b" "a" "c";
+  }
+  .desktop\@l-area-3--acb-vertical {
+    grid-template-areas: "a" "c" "b";
+  }
+  .desktop\@l-area-3--abc-horizontal {
+    grid-template-areas: "a b c";
+  }
+  .desktop\@l-area-3--acb-horizontal {
+    grid-template-areas: "a c b";
+  }
+  .desktop\@l-area-3--bac-horizontal {
+    grid-template-areas: "b a c";
+  }
+  .desktop\@l-area-3--bca-horizontal {
+    grid-template-areas: "b c a";
+  }
+  .desktop\@l-area-3--cab-horizontal {
+    grid-template-areas: "c a b";
+  }
+  .desktop\@l-area-3--cba-horizontal {
+    grid-template-areas: "c b a";
+  }
+}
 .c-card-left {
   width: 200px;
   height: 300px;
@@ -1957,26 +2121,6 @@ html {
 
 .g--margin-bottom-22 {
   margin-bottom: 640px;
-}
-
-.g--bg-color-blue {
-  background-color: var(--color-blue-back);
-}
-
-.g--text-uppercase {
-  text-transform: uppercase;
-}
-
-.g--title-color {
-  color: #792929;
-}
-
-.g--bg-base {
-  background-color: var(--color-azul);
-}
-
-.g--bg-principal {
-  background-color: var(--color-blanco);
 }
 
 .g--box-shadows-none {

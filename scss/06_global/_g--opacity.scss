@@ -1,16 +1,4 @@
-$utilities: (
-        "opacity": (
-                property: opacity,
-                class: o,
-                values: (
-                        0: 0,
-                        25: .25,
-                        50: .5,
-                        75: .75,
-                        100: 1,
-                )
-        )
-);
+
 
 @each $keyUtilities, $utilitiesValor in $utilities{
   $property: map-get($utilitiesValor,"property");
