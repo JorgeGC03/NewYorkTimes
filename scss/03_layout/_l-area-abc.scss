@@ -1,10 +1,23 @@
 .l-area-3{
     display: grid;
-    grid-template-areas: 
-    'a'
-    'b'
-    'c';
 
+
+    &__a{
+        grid-area: a;
+    }
+    &__b{
+        grid-area: b;
+    }
+    &__c{
+        grid-area: c;
+    }
+
+    &--abc-vertical{
+        grid-template-areas: 
+        'a'
+        'b'
+        'c';
+    }
     &--bca-vertical{
         grid-template-areas: 
         'b'
@@ -60,81 +73,66 @@
         'c b a';
     }
 
-    &__a{
-        grid-area: a;
-    }
-    &__b{
-        grid-area: b;
-    }
-    &__c{
-        grid-area: c;
-    }
-}
 
-@each $breakpoint , $valueBreakpoint in $breakpoints{
-    @media (min-width: $valueBreakpoint){
-    
-        .#{$breakpoint}\@l-area-3{
-            display: grid;
-            grid-template-areas: 
-            'a'
-            'b'
-            'c';
-        
-            &--bca-vertical{
+    @each $breakpoint , $valueBreakpoint in $breakpoints{
+        @media (min-width: $valueBreakpoint){
+                  
+            &--bca-vertical\@#{$breakpoint}{
                 grid-template-areas: 
                 'b'
                 'c'
                 'a';
             }
-            &--cba-vertical{
+            &--cba-vertical\@#{$breakpoint}{
                 grid-template-areas: 
                 'c'
                 'b'
                 'a';
             }
-            &--cab-vertical{
+            &--cab-vertical\@#{$breakpoint}{
                 grid-template-areas: 
                 'c'
                 'a'
                 'b';
             }
-            &--bac-vertical{
+            &--bac-vertical\@#{$breakpoint}{
                 grid-template-areas: 
                 'b'
                 'a'
                 'c';
             }
-            &--acb-vertical{
+            &--acb-vertical\@#{$breakpoint}{
                 grid-template-areas: 
                 'a'
                 'c'
                 'b';
             }
-            &--abc-horizontal{
+            &--abc-horizontal\@#{$breakpoint}{
                 grid-template-areas: 
                 'a b c';
             }
-            &--acb-horizontal{
+            &--acb-horizontal\@#{$breakpoint}{
                 grid-template-areas: 
                 'a c b';
             }
-            &--bac-horizontal{
+            &--bac-horizontal\@#{$breakpoint}{
                 grid-template-areas: 
                 'b a c';
             }
-            &--bca-horizontal{
+            &--bca-horizontal\@#{$breakpoint}{
                 grid-template-areas: 
                 'b c a';
             }
-            &--cab-horizontal{
+            &--cab-horizontal\@#{$breakpoint}{
                 grid-template-areas: 
                 'c a b';
             }
-            &--cba-horizontal{
+            &--cba-horizontal\@#{$breakpoint}{
                 grid-template-areas: 
                 'c b a';
             }
+            
         }
     }
 }
+

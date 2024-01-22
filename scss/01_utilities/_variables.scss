@@ -35,9 +35,9 @@ $box-shadows:(
 $paddings:0px, 4px, 6x, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px;
 
 $breakpoints:(
-  'movil':576px,
-  'tablet':768px,
-  'desktop':992px
+  'tablet':576px,
+  'desktop':768px,
+  'fulldesktop':992px
 );
 
 $colorsMedia:(
